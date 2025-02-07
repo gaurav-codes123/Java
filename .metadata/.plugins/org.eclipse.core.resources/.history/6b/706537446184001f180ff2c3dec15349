@@ -1,0 +1,22 @@
+package collectiondemos;
+
+import java.util.HashSet;
+
+public class HashSetdemo1 {
+
+	public static void main(String[] args) {
+		HashSet hs=new HashSet();
+		hs.add("Gaurav");
+		hs.add(88);
+		hs.add(true);
+		hs.add(null);
+		hs.add("S");
+
+		System.out.println("HashSet contains "+hs);
+
+		hs.add("Tiger");
+		System.out.println("HashSet contains "+hs);
+
+	}
+
+}

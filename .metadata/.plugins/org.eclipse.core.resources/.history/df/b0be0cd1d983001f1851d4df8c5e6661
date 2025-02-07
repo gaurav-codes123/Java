@@ -1,0 +1,25 @@
+package collectiondemos;
+
+import java.util.LinkedList;
+
+public class LinkedListdemo2 {
+
+	public static void main(String[] args) {
+		LinkedList<E> l=new LinkedList();
+		l.add("X");
+		l.add("Y");
+		l.add("Z");
+		l.add("A");
+		l.add("B");
+		l.add("C");
+		
+		LinkedList ld=new LinkedList();
+		ld.addAll(l);
+		System.out.println(ld);
+
+
+
+
+	}
+
+}

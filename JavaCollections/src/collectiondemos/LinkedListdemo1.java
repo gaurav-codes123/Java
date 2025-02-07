@@ -1,0 +1,64 @@
+package collectiondemos;
+import java.util.LinkedList;
+import java.util.Iterator;
+public class LinkedListdemo1 {
+
+
+	public static void main(String[] args) {
+		// Declare LinkedList 
+		LinkedList l=new LinkedList();
+//		LinkedList <Integer> l=new LinkedList<Integer>();
+//		LinkedList <String> l=new LinkedList<String>();
+		// Add Elements in LinkedList
+		
+		l.add(10);
+		l.add("Mohan");
+		l.add(15.5);
+		l.add("A");
+		l.add(true);
+		l.add(null);
+		
+		System.out.println(l);
+		System.out.println(l.size());// size of linkedlist 
+		
+		// remove
+		l.remove(3);
+		System.out.println("After removing, The new list:"+l);
+		 
+		// insert elements in the middle of linkedlist
+		l.add(3,"Java");
+		System.out.println("After inserting the new element:"+l);
+
+		// retriving value/object 
+		System.out.println(l.get(3));// Java
+		
+		//replace values [10, Mohan, 15.5, Java, true, null]
+		
+		l.set(1, "Sohan");
+		System.out.println("After Replacing, The list is"+l);// [10, Sohan, 15.5, Java, true, null]
+		
+		// contains // returns a boolean value
+		System.out.println(l.contains("Java"));// true 
+		System.out.println(l.contains("Python"));// false
+
+		// isEmpty()
+		System.out.println(l.isEmpty());
+		
+		//Reading elemnts from LL using for loop
+//		for(int i=0;i<l.size();i++) {
+//			System.out.println(l.get(i));
+//		}
+		// Reading elements from LL using For..each loop
+//		for(Object e:l) {
+//			System.out.println(e);
+//		}
+		
+		// Reading elements from LL using iterator
+		Iterator it=l.iterator();
+		while(it.hasNext()) {
+			System.out.println(it.next());
+		}
+		
+	}
+
+}

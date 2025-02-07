@@ -1,0 +1,22 @@
+package collectiondemos;
+
+import java.util.HashSet;
+
+public class HashSetdemo3 {
+
+	public static void main(String[] args) {
+		// Union, Intersection & difference
+		
+		HashSet set1=new HashSet();
+		set.add(1);
+		set.add(2);
+		set.add(3);
+		set.add(4);
+		set.add(5);
+		
+		System.out.println("HashSet 1:"+set1);
+
+
+	}
+
+}

@@ -1,0 +1,1 @@
+INDEX VERSION 1.132+C:\Users\Gaurav\Desktop\Java\JavaCollections\src\collectiondemos\.metadata\.plugins\org.eclipse.jdt.core

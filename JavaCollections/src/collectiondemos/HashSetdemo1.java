@@ -1,0 +1,55 @@
+package collectiondemos;
+
+import java.util.HashSet;
+import java.util.Iterator;
+
+public class HashSetdemo1 {
+
+	public static void main(String[] args) {
+	// HashSet hs=new HashSet(100);// initial capacity is 100
+	// HashSet hs=new HashSet(90,(float)0.09);// initial capacity of 90 and load factor set to 0.95
+	// HashSet <Integer> hs=new HashSet <Integer>();
+		
+		HashSet hs=new HashSet();// default capacity is 16 & Load Factor 0.75
+		
+		
+		hs.add("Gaurav");
+		hs.add(88);
+		hs.add(true);
+		hs.add(null);
+		hs.add("S");
+
+		System.out.println("HashSet contains "+hs);
+
+		hs.add("Tiger");
+		System.out.println("HashSet contains "+hs);// [null, S, 88, Gaurav, Tiger, true]
+
+		// remove()
+		hs.remove(88);// value
+		System.out.println("HashSet contains "+hs);
+		
+		// contains()
+		System.out.println(hs.contains("Gaurav"));// true
+		
+		System.out.println(hs.contains("G"));// false
+		
+		
+		//isEmpty()
+		System.out.println(hs.isEmpty()); // false
+
+		// Reading elements from hashset using for..each loop
+//		for(Object e:hs) {
+//			System.out.println(e);
+//		}
+
+		// Reading elements from hashset using iterator 
+		Iterator it=hs.iterator();
+		while(it.hasNext())
+		{
+			System.out.println(it.next());
+		}
+
+
+	}
+
+}

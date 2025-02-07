@@ -1,0 +1,30 @@
+package collectiondemos;
+
+import java.util.LinkedList;
+
+public class LinkedListdemo2 {
+
+	public static void main(String[] args) {
+		LinkedList l=new LinkedList();
+		l.add("X");
+		l.add("Y");
+		l.add("Z");
+		l.add("A");
+		l.add("B");
+		l.add("C");
+		
+		LinkedList ld=new LinkedList();
+		ld.addAll(l);
+		System.out.println(ld);
+		
+		ld.removeAll(l);
+		System.out.println(ld);
+
+		// sort()
+		System.out.println("Before Sorting"+l);
+		System.out.println("After Sorting"+collection.sort(l));
+
+
+	}
+
+}
